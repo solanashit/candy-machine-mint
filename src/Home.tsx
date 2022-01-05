@@ -56,6 +56,25 @@ const Home = (props: HomeProps) => {
 
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
+  const {
+    candyMachine,
+    goLiveDate,
+    itemsAvailable,
+    itemsRemaining,
+    itemsRedeemed,
+  } = await getCandyMachineState(
+    wallet as anchor.Wallet,
+    props.candyMachineId,
+    props.connection
+  );
+
+  setItemsAvailable(itemsAvailable);
+  setItemsRemaining(itemsRemaining);
+  setItemsRedeemed(itemsRedeemed);
+
+  setIsSoldOut(itemsRemaining === 0);
+  setStartDate(goLiveDate);
+  setCandyMachine(candyMachine);
 
   const refreshCandyMachineState = () => {
     (async () => {
