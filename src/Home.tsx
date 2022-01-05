@@ -56,25 +56,10 @@ const Home = (props: HomeProps) => {
 
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
-  const {
-    candyMachine,
-    goLiveDate,
-    itemsAvailable,
-    itemsRemaining,
-    itemsRedeemed,
-  } = await getCandyMachineState(
-    wallet as anchor.Wallet,
-    props.candyMachineId,
-    props.connection
-  );
 
-  setItemsAvailable(itemsAvailable);
-  setItemsRemaining(itemsRemaining);
-  setItemsRedeemed(itemsRedeemed);
+  //I put this here, if I remove shit works proper again:D
 
-  setIsSoldOut(itemsRemaining === 0);
-  setStartDate(goLiveDate);
-  setCandyMachine(candyMachine);
+  //untill here :D
 
   const refreshCandyMachineState = () => {
     (async () => {
