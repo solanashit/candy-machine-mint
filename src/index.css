@@ -57,7 +57,10 @@ h1 {
 }
 .preshit {
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
+  max-width: 1140px;
+  align-items: center;
+  position: relative;
 }
 
 .fab {
