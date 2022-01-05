@@ -62,12 +62,13 @@ h1 {
 
 .HeroBox {
   display: block;
-  max-width: 1140px;
+
   text-align: center;
 }
 
 .HeroBox img {
   width: 100%;
+  max-width: 1140px;
 }
 .fab {
   color: white;
