@@ -25,6 +25,9 @@ code {
   justify-content: space-between;
   align-items: center;
   max-width: 1140px;
+  position: relative;
+  height: inherit;
+  margin: 0 auto;
 }
 .nav {
   font-size: 18px;
