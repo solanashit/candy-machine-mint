@@ -58,3 +58,10 @@ h1 {
   text-align: center;
   margin: 20px;
 }
+
+.fab {
+  font-family:Font Awesome 5 Brands;
+  -webkit-font-smoothing:antialiased;
+  font weight:400;
+  color: white;
+}
