@@ -57,6 +57,10 @@ const Home = (props: HomeProps) => {
   const wallet = useAnchorWallet();
   const [candyMachine, setCandyMachine] = useState<CandyMachine>();
 
+  //I put this here, if I remove shit works proper again:D
+
+  //untill here :D
+
   const refreshCandyMachineState = () => {
     (async () => {
       if (!wallet) return;
