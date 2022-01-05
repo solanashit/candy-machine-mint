@@ -43,7 +43,13 @@ code {
 
 .shitcontent {
   text-align: center;
+  background-color: #6fb6ed;
 }
 h1 {
   text-align: center;
+  font-family: "Titan One", cursive;
+}
+.preshit {
+  text-align: center;
+  margin: 20px;
 }
