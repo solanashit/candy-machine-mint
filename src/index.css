@@ -60,7 +60,7 @@ h1 {
 }
 
 .fab {
-  font-family:Font Awesome 5 Brands;
+  font-family:"Font Awesome 5 Brands";
   -webkit-font-smoothing:antialiased;
   font weight:400;
   color: white;
