@@ -57,12 +57,17 @@ h1 {
 }
 .preshit {
   text-align: center;
-  margin: 0 auto;
-  max-width: 1140px;
-  align-items: center;
-  position: relative;
+  margin: 15;
 }
 
+.HeroBox {
+  display: block;
+  max-width: 1140px;
+}
+
+.HeroBox img {
+  width: 100%;
+}
 .fab {
   color: white;
   font-size: 40px;
